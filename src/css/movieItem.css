@@ -1,0 +1,50 @@
+.movieItem {
+  display: flex;
+  flex-flow: column;
+  max-width: 15em;
+}
+.movieItem:hover {
+  text-decoration: none;
+}
+.movieItem > img {
+  align-self: center;
+  width: 100%;
+  height: auto;
+  border-radius: 0.3em;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.1);
+  }
+
+  75% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.movieItem {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+.itemTitle {
+  color: var(--text-color-1);
+  font-size: 0.9em;
+  margin-top: 0.5em;
+}
+.voteDesc,
+.releaseDate {
+  font-size: 0.75em;
+  margin-top: -0.7em;
+  margin-bottom: 0.6em;
+}
+.voteDesc {
+  color: var(--red-color);
+}
+.releaseDate {
+  color: var(--text-color-2);
+}

@@ -1,0 +1,105 @@
+.movieContainer {
+  display: flex;
+  flex-direction: column;
+}
+.movieImage {
+  height: 100%;
+}
+.movieImage > img {
+  align-self: center;
+  max-width: 100%;
+  padding: 1em;
+
+  height: auto;
+  border-radius: 0.3em;
+}
+.movieImage {
+  text-align: center;
+}
+.movieInfo {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.movieInfo2 {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0.5em 0;
+}
+.movieGenreBox {
+  margin: 1em 0;
+}
+.movieGenre {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.movieGenre > .button {
+  font-size: 0.7em;
+  padding: 0.2em 0.4em;
+  background-color: var(--main-background-color);
+  color: var(--text-color-2);
+}
+.movieGenre > .button:hover {
+  top: -2px;
+  color: var(--main-background-color);
+  background-color: var(--text-color-1);
+}
+
+.movieRating {
+  color: var(--text-color-1);
+}
+.movieRating > i {
+  font-size: 0.75em;
+}
+.movieInfo2 p {
+  font-size: 0.75em;
+  margin: 0.2em;
+  color: var(--text-color-1);
+}
+.movieOverview h4,
+.movieTitle h2,
+.movieGenreBox h4,
+.movieCast h4 {
+  color: var(--text-color-1);
+}
+.movieOverview p,
+.movieTitle p {
+  color: var(--text-color-2);
+  font-size: 0.9em;
+}
+.movieCast {
+  margin-bottom: 0.5em;
+}
+.movieCast img {
+  object-fit: cover;
+
+  height: 11em;
+  width: 100%;
+}
+.movieButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.movieButton > .button,
+.movieButton > div > .button {
+  text-transform: initial;
+  font-size: 0.8em;
+}
+.card {
+  margin: 0 0.3em;
+  border: none !important;
+  background-color: var(--header-color) !important;
+}
+.card-body {
+  padding: 0 !important;
+}
+.card-body p {
+  font-size: 0.7em;
+  color: var(--red-color);
+  text-align: center;
+}

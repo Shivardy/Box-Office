@@ -1,0 +1,48 @@
+.personContainer {
+  display: flex;
+  flex-direction: column;
+}
+.personImage > img {
+  align-self: center;
+  max-width: 100%;
+  padding: 1em;
+  height: auto;
+  border-radius: 0.3em;
+}
+.personImage {
+  text-align: center;
+}
+.personInfo {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.personTitle {
+  margin-bottom: 1.5em;
+}
+.personTitle p {
+  color: var(--text-color-2);
+  font-size: 0.9em;
+}
+.personTitle h2 {
+  color: var(--text-color-1);
+}
+.personBiography h4 {
+  color: var(--text-color-1);
+}
+.personBiography {
+  margin-bottom: 1.5em;
+}
+.personBiography p {
+  color: var(--text-color-2);
+  font-size: 0.9em;
+}
+.personButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.personButton > .button {
+  text-transform: initial;
+  font-size: 0.8em;
+}
